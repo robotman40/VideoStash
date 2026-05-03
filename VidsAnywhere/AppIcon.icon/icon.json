@@ -1,0 +1,51 @@
+{
+  "fill" : {
+    "linear-gradient" : [
+      "display-p3:1.00000,0.19834,0.98310,1.00000",
+      "display-p3:0.96783,0.56298,0.15411,1.00000"
+    ],
+    "orientation" : {
+      "start" : {
+        "x" : 0.5,
+        "y" : 0
+      },
+      "stop" : {
+        "x" : 0.5,
+        "y" : 0.7
+      }
+    }
+  },
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "fill" : "automatic",
+          "glass" : true,
+          "image-name" : "iconviddownloader.png",
+          "name" : "iconviddownloader",
+          "position" : {
+            "scale" : 2.25,
+            "translation-in-points" : [
+              0,
+              67.140625
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "circles" : [
+      "watchOS"
+    ],
+    "squares" : "shared"
+  }
+}
