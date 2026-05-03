@@ -34,7 +34,7 @@ func YTDLPDownload(format: String, url: String) async throws -> YTDLPResult {
         let result = try await run(
             .path("/opt/homebrew/bin/yt-dlp"),
             arguments: ["-t", format,
-                        "-o", "Downloads/VidsAnywhere/%(title)s.%(ext)s",
+                        "-o", "Downloads/VideoStash/%(title)s.%(ext)s",
                         "--ffmpeg-location", "/opt/homebrew/bin/ffmpeg",
                         "--embed-thumbnail",
                         url],
