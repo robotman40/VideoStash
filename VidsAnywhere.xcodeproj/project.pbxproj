@@ -11,7 +11,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE5509B32FA6F9B20088C7FF /* VidsAnywhere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VidsAnywhere.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5509B32FA6F9B20088C7FF /* VideoStash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoStash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -45,7 +45,7 @@
 		CE5509B42FA6F9B20088C7FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE5509B32FA6F9B20088C7FF /* VidsAnywhere.app */,
+				CE5509B32FA6F9B20088C7FF /* VideoStash.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,9 +53,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE5509B22FA6F9B20088C7FF /* VidsAnywhere */ = {
+		CE5509B22FA6F9B20088C7FF /* VideoStash */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE5509BE2FA6F9B30088C7FF /* Build configuration list for PBXNativeTarget "VidsAnywhere" */;
+			buildConfigurationList = CE5509BE2FA6F9B30088C7FF /* Build configuration list for PBXNativeTarget "VideoStash" */;
 			buildPhases = (
 				CE5509AF2FA6F9B20088C7FF /* Sources */,
 				CE5509B02FA6F9B20088C7FF /* Frameworks */,
@@ -68,12 +68,12 @@
 			fileSystemSynchronizedGroups = (
 				CE5509B52FA6F9B20088C7FF /* VidsAnywhere */,
 			);
-			name = VidsAnywhere;
+			name = VideoStash;
 			packageProductDependencies = (
 				CEEEF3AD2FA7038100397A44 /* Subprocess */,
 			);
 			productName = VidsAnywhere;
-			productReference = CE5509B32FA6F9B20088C7FF /* VidsAnywhere.app */;
+			productReference = CE5509B32FA6F9B20088C7FF /* VideoStash.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +108,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE5509B22FA6F9B20088C7FF /* VidsAnywhere */,
+				CE5509B22FA6F9B20088C7FF /* VideoStash */,
 			);
 		};
 /* End PBXProject section */
@@ -268,7 +268,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = VidsAnywhere;
+				INFOPLIST_KEY_CFBundleDisplayName = VideoStash;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -276,7 +276,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = ChrisRios.VidsAnywhere;
+				PRODUCT_BUNDLE_IDENTIFIER = ChrisRios.VideoStash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -302,7 +302,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = VidsAnywhere;
+				INFOPLIST_KEY_CFBundleDisplayName = VideoStash;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,7 +310,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = ChrisRios.VidsAnywhere;
+				PRODUCT_BUNDLE_IDENTIFIER = ChrisRios.VideoStash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -334,7 +334,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE5509BE2FA6F9B30088C7FF /* Build configuration list for PBXNativeTarget "VidsAnywhere" */ = {
+		CE5509BE2FA6F9B30088C7FF /* Build configuration list for PBXNativeTarget "VideoStash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE5509BF2FA6F9B30088C7FF /* Debug */,

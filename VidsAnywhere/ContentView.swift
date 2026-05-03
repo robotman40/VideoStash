@@ -51,7 +51,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("VidsAnywhere")
+            Text("VideoStash")
                 .fontWeight(.bold)
                 .font(.system(size: 32))
                 .padding()
