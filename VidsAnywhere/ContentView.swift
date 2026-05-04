@@ -94,11 +94,10 @@ struct ContentView: View {
     @MainActor
     func downloadAudio(url: String) async {
         // Download audio
+        currentlyBusy = true;
         do {
             // Block the UI while we're running yt-dlp
-            currentlyBusy = true;
             let result = try await YTDLPDownload(format: "mp3", url: url)
-            currentlyBusy = false;
             
             // Get data about the call and display it to the user
             infoData = InfoData(
@@ -116,16 +115,16 @@ struct ContentView: View {
                 result: nil
             )
         }
+        currentlyBusy = false;
     }
     
     @MainActor
     func downloadVideo(url: String) async {
         // Download video
+        currentlyBusy = true;
         do {
             // Block the UI while we're running yt-dlp
-            currentlyBusy = true;
             let result = try await YTDLPDownload(format: "mp3", url: url)
-            currentlyBusy = false;
             
             // Get data about the call and display it to the user
             infoData = InfoData(
@@ -143,6 +142,7 @@ struct ContentView: View {
                 result: nil
             )
         }
+        currentlyBusy = false;
     }
 }
 
