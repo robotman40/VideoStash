@@ -32,12 +32,15 @@ func YTDLPDownload(format: String, url: String) async throws -> YTDLPResult {
     do {
         // Get the resulting call from running yt-dlp
         let result = try await run(
-            .path("/opt/homebrew/bin/yt-dlp"),
+            .name("yt-dlp"),
             arguments: ["-t", format,
                         "-o", "Downloads/VideoStash/%(title)s.%(ext)s",
                         "--ffmpeg-location", "/opt/homebrew/bin/ffmpeg",
                         "--embed-thumbnail",
                         url],
+            environment: .inherit.updating([
+                "PATH": "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin"
+            ]),
             workingDirectory: FilePath(.homeDirectory),
             output: .string(limit: 16384)
         )
@@ -45,6 +48,7 @@ func YTDLPDownload(format: String, url: String) async throws -> YTDLPResult {
         return YTDLPResult(pid: result.processIdentifier, success: result.terminationStatus.isSuccess, output: result.standardOutput)
     } catch {
         // Stuff error handling (work on later)
+        print(error)
         throw YTDLPError.Unknown
     }
 }
