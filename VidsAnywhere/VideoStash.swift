@@ -35,6 +35,9 @@ struct VidsAnywhereApp: App {
                     message: "Please be sure that FFmpeg and yt-dlp are installed via Homebrew"
                 )
             }
+            #if os(macOS)
+            
+            #endif
         }
         .windowResizability(.contentSize) // Limit resizability by default
     }
